@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyyyqb571c47q"]
+
+[ext_resource type="Theme" uid="uid://u88ihmjoal42" path="res://addons/authorprinttoconsole/default.res" id="1_0mgbe"]
+[ext_resource type="Script" path="res://addons/authorprinttoconsole/info.gd" id="2_jh00s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qme2h"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_0mgbe")
+script = ExtResource("2_jh00s")
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+top_level = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_0mgbe")
+bbcode_enabled = true
+text = "
+
+
+
+
+
+
+
+[pulse freq=1.0 color=#ffffff40 ease=-2.0]
+[wave amp=50.0 freq=5.0 connected=1]
+[tornado radius=10.0 freq=1.0 connected=1]
+[shake rate=20.0 level=5 connected=1]
+[rainbow freq=1.0 sat=0.8 val=0.8]
+
+									Created by Andrew Poženel - CaSCade5509
+									For more info visit: https://andrew-pozenel.xyz/
+
+[/rainbow]
+[/shake]
+[/tornado]
+[/wave]
+[/pulse]
+
+
+
+
+"
+scroll_active = false
+scroll_following = true
+threaded = true
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_0mgbe")
+label_settings = SubResource("LabelSettings_qme2h")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
